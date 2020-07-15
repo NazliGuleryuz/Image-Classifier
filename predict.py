@@ -159,8 +159,7 @@ def main():
     # Process Image
     image_tensor = processimage(args.image)
     
-    # Check for GPU
-    device = check_gpu(gpu_arg=args.gpu);
+   
     
     # Use `processed_image` to predict the top K most likely classes
     top_probs, top_labels, top_flowers = predict(image_tensor, model, 
