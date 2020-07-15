@@ -5,7 +5,7 @@ import torch
 import numpy as np
 
 from math import ceil
-from train import check_gpu
+
 from  torchvision import models
 
 
