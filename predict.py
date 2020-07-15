@@ -34,7 +34,7 @@ def loadcheckpoint(checkpoint_path):
     model = models.vgg16(pretrained=True);
     model.to(device)
     # Load the saved file
-    checkpoint = torch.load("check.pth")
+    checkpoint = torch.load(checkpoint_path)
     model.arch = checkpoint.get('arch')
     assert checkpoint.get("arch") == model.__module__.split('.')[-1]
 
